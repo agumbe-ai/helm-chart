@@ -14,6 +14,7 @@ env:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    environment: github-pages  # 👈 Since this a public repo, and has an autocreated environment - adding secrets to that environment, allowing it to be gated like production deploys.
 
     # Add "id-token" with the intended permissions.
     permissions:
