@@ -23,6 +23,15 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+    
+    - name: Debug GCP_SA_KEY presence
+      run: |
+        if [ -z "${{ secrets.GCP_SA_KEY }}" ]; then
+          echo "GCP_SA_KEY is empty!"
+          exit 1
+        else
+          echo "GCP_SA_KEY is set."
+        fi
 
     # Authentication for gcloud Artifact Registry via credentials json
     - id: 'auth'
