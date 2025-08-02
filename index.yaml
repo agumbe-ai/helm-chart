@@ -3,12 +3,12 @@ entries:
   xnamespace-operator:
   - apiVersion: v2
     appVersion: main
-    created: "2025-08-01T16:22:36.790116+05:30"
+    created: "2025-08-02T09:59:16.124956+05:30"
     description: A Helm chart for Kubernetes
-    digest: 0ea4568528174712211a54ba9ee374ecf924ccc07e1eabfdd04a3326d91f38db
+    digest: edbde3fb4194a7395c85d73342c453c85e37de44ac4fb90ce4e7781eee0826bd
     name: xnamespace-operator
     type: application
     urls:
     - https://agumbe-ai.github.io/helm-charts/xnamespace-operator-0.1.0.tgz
     version: 0.1.0
-generated: "2025-08-01T16:22:36.78783+05:30"
+generated: "2025-08-02T09:59:16.124385+05:30"
