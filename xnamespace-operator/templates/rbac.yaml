@@ -1,0 +1,43 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - namespaces
+  verbs:
+  - create
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - platform.agumbe.ai
+  resources:
+  - xnamespaces
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - platform.agumbe.ai
+  resources:
+  - xnamespaces/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - platform.agumbe.ai
+  resources:
+  - xnamespaces/status
+  verbs:
+  - get
+  - patch
+  - update
